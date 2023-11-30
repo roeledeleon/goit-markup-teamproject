@@ -1,11 +1,21 @@
-/* FONTS */
-/* COLORS */
-/* ACCENT */
-/* BACKGROUND */
-/* REVIEWS */
-/* TITLE */
-/* TEXT */
-/* BUTTON */
-/* ICON */
-/* BORDER */
-/* SHADOW */
+:root {
+  /* FONTS */
+  --primary-font: 'DM Sans', sans-serif;
+  --title-font: 'Titan One', cursive;
+  /* COLORS */
+  /* ACCENT */
+  /* BACKGROUND */
+  /* REVIEWS */
+  /* TITLE */
+  /* TEXT */
+  --text-white: #ffffff;
+  --text-black: #000000;
+
+  --text-red: #d41443;
+  --text-rose: #ffa5ba;
+  --text-rose-gray: #907e82;
+  /* BUTTON */
+  /* ICON */
+  /* BORDER */
+  /* SHADOW */
+}
