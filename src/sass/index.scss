@@ -1,20 +1,28 @@
-@import './common';
 /* @import './example'; */
 
+/* Styles - Utils */
+@import './utils/common';
+@import './utils/global';
+@import './utils/variables';
+
+/* Styles - Materials | Buttons */
+@import './materials/buttons';
+
 /* Styles - HEADER */
+@import './layout/header';
 /* Styles - HERO */
-@import './hero';
+@import './layout/hero';
 /* Styles - PRODUCTS */
-@import './products';
+@import './layout/products';
 /* Styles - ABOUT */
-@import './about';
+@import './layout/about';
 /* Styles - ADVANTAGES */
-@import './advantages';
+@import './layout/advantages';
 /* Styles - GALLERY */
-@import './gallery';
+@import './layout/gallery';
 /* Styles - CUSTOMER REVIEWS */
-@import './customer-reviews';
+@import './layout/customer-reviews';
 /* Styles - CONTACTS */
-@import './contacts';
+@import './layout/contacts';
 /* Styles - FOOTER */
-@import './footer';
+@import './layout/footer';
