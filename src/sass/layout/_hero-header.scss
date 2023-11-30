@@ -1,0 +1,60 @@
+.section-hero {
+  background-color: var(--accent-rose);
+}
+.header {
+  background-color: var(--accent-rose);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  background-color: transparent;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-rose);
+}
+.nav-header {
+  height: 100px;
+  width: 70%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-list {
+  width: 541px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-item {
+  display: flex;
+}
+.navbar-item:not(:first-child) {
+  margin-left: calc(2 * var(--item-gap-text));
+}
+.navbar-link {
+  color: var(--text-white);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  //font-style: normal;
+  font-weight: 700;
+  line-height: 20.83px;
+  letter-spacing: 1px;
+}
+.btn_buy-now {
+  @extend %button;
+  width: 159px;
+  height: 44px;
+
+  background-color: var(--button-bg-white);
+  color: var(--text-red);
+}
+.btn_buy-now:hover {
+  background-color: var(--button-bg-white-hover);
+}
