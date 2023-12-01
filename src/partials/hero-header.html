@@ -4,12 +4,18 @@
       <nav class="nav-header">
         <div>
           <a href="./index.html" class="header-logo">
-            <img
+            <!-- <img
               src="./images/SVG/logo_icon+ice-cream.svg"
               alt="logo site"
               width="199"
               height="50"
             />
+            -->
+            <svg class="icon_logo" width="199" height="50">
+              <use
+                href="/src/images/symbol-defs.svg#icon-logo_iconice-cream"
+              ></use>
+            </svg>
           </a>
         </div>
         <div>
@@ -32,8 +38,15 @@
           </ul>
         </div>
       </nav>
-      <div>
-        <a class="button btn_buy-now">Buy now ></a>
+      <div class="button btn_buy-now">
+        <div>
+          <a>Buy now </a>
+        </div>
+        <div>
+          <svg class="icon_buy-now" width="10" height="20">
+            <use href="/src/images/symbol-defs.svg#icon-arrow-button"></use>
+          </svg>
+        </div>
       </div>
     </div>
   </section>
@@ -62,7 +75,7 @@
           unforgettable experience!
         </h2>
         <button type="button" class="button-circle-small">
-          <svg class="hero-icon">
+          <svg class="icon_arrow-right" width="10" height="10">
             <use
               href="/src/images/symbol-defs.svg#icon-arrow-button-circle"
             ></use>
@@ -70,5 +83,13 @@
         </button>
       </div>
     </div>
+    <ul class="hero-number-list">
+      <li class="hero-number-item"><a class="hero-number"> 16</a></li>
+      <li class="hero-number-item"><a class="hero-number-text">cafes</a></li>
+      <li class="hero-number-item"><a class="hero-number"> 23</a></li>
+      <li class="hero-number-item">
+        <a class="hero-number-text">food trucks</a>
+      </li>
+    </ul>
   </div>
 </section>
