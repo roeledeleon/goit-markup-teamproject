@@ -35,11 +35,30 @@
       <!-- Section CUSTOMER REVIEWS -->
       <include src="./partials/customer-reviews.html"></include>
       <!-- Section CONTACTS -->
-      <include src="./partials/contacts.html"></include>
+      <include src="./partials/contact.html"></include>
     </main>
     <footer>
       <!-- Section FOOTER -->
       <include src="./partials/footer.html"></include>
     </footer>
+    <script>
+      // Get the button
+      let myheader = document.getElementById('home');
+
+      // When the user scrolls down 1px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 1 ||
+          document.documentElement.scrollTop > 1
+        ) {
+          myheader.style.zIndex = 3;
+        } else {
+          myheader.style.zIndex = 2;
+        }
+      }
+    </script>
   </body>
 </html>
