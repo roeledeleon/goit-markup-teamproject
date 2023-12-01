@@ -17,3 +17,62 @@
   text-align: center;
   cursor: pointer;
 }
+
+/* Hero Buttons */
+%button-hero {
+  display: flex;
+  padding: 11px 24px;
+  border-radius: 20px;
+
+  text-align: center;
+
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.23px;
+}
+.button-hero-white {
+  @extend %button-hero;
+
+  background-color: var(--button-bg-white);
+  color: var(--text-red);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-white-hover);
+  }
+}
+
+.button-hero-red {
+  @extend %button-hero;
+
+  background-color: var(--button-bg-red);
+  color: var(--text-white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-red-hover);
+  }
+}
+/* Circle Buttons */
+%button-circle {
+  border-radius: 50%;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--text-red);
+  background-color: var(--button-bg-white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-white-hover);
+  }
+}
+.button-circle-small {
+  @extend %button-circle;
+  width: 26px;
+  height: 26px;
+}
