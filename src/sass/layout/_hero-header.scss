@@ -170,7 +170,6 @@
   letter-spacing: 4%;
   color: var(--text-red);
 }
-
 .hero-number-text {
   position: relative;
   font-family: var(--primary-font);
@@ -179,5 +178,47 @@
   line-height: 1.3;
   color: var(--text-white);
 }
+.hero-image {
+  position: absolute;
 
+  top: 0px;
+  left: 0px;
+}
+.hero-image_1st-set {
+  position: absolute;
+}
+.img-circle {
+  position: absolute;
+  z-index: 150;
+
+  top: 154px;
+  left: 784px;
+
+  width: 534px;
+  height: 534px;
+  border-radius: 50%;
+
+  background-color: var(--rose);
+  transform: translate(-50%, -20%);
+}
+.img_ice-cream {
+  position: relative;
+  z-index: 200;
+
+  top: 108px;
+  left: 636px;
+
+  width: 236px;
+  height: 557px;
+}
+.img_lady-lick {
+  position: absolute;
+  z-index: 250;
+
+  top: 423px;
+  left: 880px;
+
+  width: 304px;
+  //height: 241px;
+}
 /* End of HERO Styles */
