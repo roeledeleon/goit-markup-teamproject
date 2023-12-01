@@ -1,3 +1,4 @@
+/* HEADER Styles */
 .section-hero {
   background-color: var(--accent-rose);
 }
@@ -58,3 +59,45 @@
 .btn_buy-now:hover {
   background-color: var(--button-bg-white-hover);
 }
+/* End of HEADER Styles */
+
+/* HERO Styles */
+.section-hero {
+  background-color: var(--bg-hero);
+}
+
+.hero-container {
+  position: relative;
+
+  padding-top: 147px;
+  padding-bottom: 272px;
+  background-color: var(--bg-hero);
+}
+
+.hero-wrapper {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 108px;
+}
+
+.hero-title {
+  width: 277px;
+  height: 137px;
+
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 43.51px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.hero-title-special {
+  font-size: 58px;
+  line-height: 52.49px;
+  letter-spacing: 4%;
+  color: var(--text-red);
+}
+/* End of HERO Styles */
