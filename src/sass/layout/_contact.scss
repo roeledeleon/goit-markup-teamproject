@@ -9,3 +9,47 @@
   display: flex;
   flex-direction: column;
 }
+
+.contact-header-cafe {
+  text-align: center;
+  width: 75.103px;
+  height: 28px;
+  flex-shrink: 0;
+  font-weight: 500;
+  line-height: 29.76px;
+  letter-spacing: 0.64px;
+  border-radius: 6px;
+  background: #f0d1a5;
+}
+
+.contact-header-truck {
+    text-align: center;
+    width: 138px;
+    height: 28px;
+    flex-shrink: 0;
+    font-weight: 500;
+    line-height: 29.76px;
+    letter-spacing: 0.64px;
+    border-radius: 6px;
+    background: #c2e297;
+}
+
+.contact-container {
+  justify-content: center;
+}
+
+.contact-details-ul {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-details-li {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 85px;
+  width: 368px;
+  height: 538px;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+}
