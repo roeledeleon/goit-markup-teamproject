@@ -5,18 +5,27 @@
   background-color: var(--bg-rose-light);
 }
 
+.footer-text {
+  width: 474px;
+}
 .homemade-ice-cream {
+  color: var(--text-rose);
+
   font-family: var(--title-font);
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+
+  gap: 24px;
 }
 .with-passion {
+  color: var(--text-red);
+
   font-family: var(--title-font);
   font-size: 58px;
   font-weight: 400;
-  letter-spacing: 3.48px;
+  letter-spacing: 3.25px;
   text-transform: uppercase;
 }
 .socmed-icons {
