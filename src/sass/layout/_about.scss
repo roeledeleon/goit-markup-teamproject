@@ -2,10 +2,7 @@
   background-color: var(--bg-rose-light);
 }
 .about-container {
-  display: flex;
   background-color: var(--bg-rose-light);
-}
-.sample {
-  width: auto;
-  height: 1500px;
+  display: flex;
+  flex-direction: column;
 }
