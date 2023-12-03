@@ -1,5 +1,6 @@
 .section-footer {
   background-color: var(--bg-rose-light);
+ 
 }
 .footer-container {
   background-color: var(--bg-rose-light);
@@ -39,7 +40,7 @@
 
 .socmed-items{
   position: relative;
-  left: 41%;
+  left: 45%;
 }
 
 .socmed-icons{
@@ -47,7 +48,7 @@
   align-items: center;
   gap: 30px;
   position: relative;
-  left: 40%;
+  left: 50%;
 }
 
 .footer-contact{
@@ -57,7 +58,7 @@
 .footer-vector{
   display: block;
   position: relative;
-  top: 70px;
+  top: 60px;
 }
 
 .footer-vector svg{
@@ -69,6 +70,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 4px;
+}
+
+.copyright-text{
+  color: var(--rose-gray);
+  font-size: var(--primary-font);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.28px;
 }
 
 
