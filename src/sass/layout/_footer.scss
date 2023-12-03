@@ -28,15 +28,65 @@
   letter-spacing: 3.25px;
   text-transform: uppercase;
 }
-.socmed-icons {
+
+.footer-items{
+  display: flex;
+}
+
+.homemade-ice-cream{
+  display: block;
+}
+
+.socmed-items{
+  position: relative;
+  left: 41%;
+}
+
+.socmed-icons{
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 30px;
+  position: relative;
+  left: 40%;
 }
-.footer-contact {
+
+.footer-contact{
+  padding-top: 30px;
+}
+
+.footer-vector{
+  display: block;
+  position: relative;
+  top: 70px;
+}
+
+.footer-vector svg{
+  stroke-width: 1px;
+  color: var(--gray);
+}
+
+.copyright{
   display: flex;
-  text-align: center;
-  justify-content: flex-end;
-  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-contact-text{
+  color: var(--black);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.86em;
+  letter-spacing: 0.32;
+}
+
+
+.footer-contact-no{
+  color: var(--red);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.86em;
+  letter-spacing: 0.32px;
 }
