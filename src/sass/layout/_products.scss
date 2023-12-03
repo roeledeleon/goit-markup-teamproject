@@ -2,10 +2,8 @@
   background-color: var(--bg-white);
 }
 .products-container {
-  display: flex;
   background-color: var(--bg-white);
-}
-.sample {
-  width: auto;
-  height: 1500px;
+
+  display: flex;
+  flex-direction: column;
 }
