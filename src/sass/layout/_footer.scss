@@ -5,25 +5,27 @@
   background-color: var(--bg-rose-light);
 }
 
-.homemade-cream{
+.homemade-ice-cream {
+  font-family: var(--title-font);
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
-.passion-with{
+.with-passion {
+  font-family: var(--title-font);
   font-size: 58px;
   font-weight: 400;
   letter-spacing: 3.48px;
   text-transform: uppercase;
 }
-.socmed-icons{
+.socmed-icons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
 }
-.footer-contact{
+.footer-contact {
   display: flex;
   text-align: center;
   justify-content: flex-end;
