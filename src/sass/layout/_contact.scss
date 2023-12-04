@@ -11,6 +11,10 @@
   font-family: DM Sans;
 }
 
+h4 {
+  color: white;
+}
+
 .contact-header-cafe {
   text-align: center;
   width: 75.103px;
@@ -150,9 +154,19 @@ display: flex;
   border: 22px;
   border-radius: 22px;
   background: #FFF;
+  color: #D41443;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 36.4px;
 }
 
 .location-button,
 .franchise-button {
   margin-top: 60px;
 }
+
+.contact-details-link:hover, :focus{
+  color: #D41443;
+}
+
