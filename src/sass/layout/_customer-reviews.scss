@@ -17,10 +17,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 968px;
-  height: 138px;
-  flex-shrink: 0;
-  background: #FAFAFA;
+  // width: 968px;
+  // height: 138px;
+  // flex-shrink: 0;
+  // background: #FAFAFA;
 }
 
 .swiper-slide img {
@@ -37,3 +37,18 @@
   margin-right: auto;
 }
 
+.testimony-content {
+  justify-content: center;
+  align-items: center;
+  width: 968px;
+  height: 138px;
+  flex-shrink: 0;
+  background: #FAFAFA;
+}
+
+
+.swiper-wrapper img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
