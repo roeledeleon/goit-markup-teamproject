@@ -86,12 +86,18 @@
   border: 1px;
   stroke-width: 1px;
   stroke: #E1E1E1;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
+.icon-Vector-line {
+  height: 8px;
+  display: flex;
+  /*margin-top: 32px;*/
+}
 .contact-details-two {
   color: #000;
-  margin-top: 64px;
-  margin-bottom: 64px;
+ /*margin-top: 64px;*/
 }
 
 .contact-time {
