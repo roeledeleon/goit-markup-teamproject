@@ -62,13 +62,13 @@
 }
 
 .contact-place {
-  width: 67.901px;
   color: #000;
   font-weight: 500;
   line-height: 29.76px;
   margin-top: 32px;
   margin-bottom: 8px;
 }
+
 .contact-text {
   width: 288px;
   height: 50px;
@@ -91,7 +91,7 @@
 .contact-details-two {
   color: #000;
   margin-top: 64px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .contact-time {
@@ -130,6 +130,13 @@ display: flex;
   line-height: normal;
   margin-left: 34px;
 }
+
+.icon-contact-arrow-button {
+    flex-shrink: 0;
+    stroke-width: 2px;
+      stroke: #FFF;
+}
+
 .franchise-button {
   width: 168px;
   height: 44px;
