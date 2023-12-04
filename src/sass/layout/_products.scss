@@ -101,6 +101,7 @@
 }
 
 .image-container {
+  display: none;
   width: 100%;
   position: relative;
   z-index: 2;
@@ -119,4 +120,22 @@
 .button-div {
   padding-top: 32px;
   padding-bottom: 60px;
+}
+
+.product-one::before {
+  content: url(/src/images/home-pic1.png);
+  position: relative;
+  z-index: 100;
+}
+
+.product-two::before {
+  content: url(/src/images/home-pic2.png);
+  position: relative;
+  z-index: 100;
+}
+
+.product-three::before {
+  content: url(/src/images/home-pic3.png);
+  position: relative;
+  z-index: 100;
 }
