@@ -17,9 +17,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 968px;
-  // height: 138px;
-  // flex-shrink: 0;
+  width: 968px;
+  height: 138px;
+  flex-shrink: 0;
   // background: #FAFAFA;
 }
 
@@ -38,14 +38,25 @@
 }
 
 .testimony-content {
-  justify-content: center;
-  align-items: center;
-  width: 968px;
-  height: 138px;
+  // gap: 4px;
+  // justify-content: center;
+  // align-items: center;
+  // width: 968px;
+  // height: 138px;
   flex-shrink: 0;
   background: #FAFAFA;
+  padding: 47px 108px 39px 110px;
 }
 
+.swiper-slide svg {
+  width: 32px;
+  height: 4px;
+  flex-shrink: 0;
+  }
+
+  .testimony-name {
+    line-height: 37.2px;
+    }
 
 .swiper-wrapper img {
   display: block;
