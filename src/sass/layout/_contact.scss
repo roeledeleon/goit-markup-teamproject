@@ -1,11 +1,199 @@
 .section-contact {
-  background-color: var(--bg-white);
+  background-color: var(--bg-rose-light);
 }
-.contacts-container {
+.contact-container {
   display: flex;
-  background-color: var(--bg-white);
+  background-color: var(--bg-rose-light);
 }
-.sample {
-  width: auto;
-  height: 1500px;
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-font);
 }
+
+h4 {
+  color: var(--text-white);
+}
+.contact-header {
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  font-weight: 500;
+  line-height: 29.76px;
+  letter-spacing: 0.64px;
+  border-radius: 6px;
+}
+.cafe {
+  width: 75.103px;
+  background: var(--accent-yellow);
+}
+.truck {
+  width: 138px;
+  background: var(--accent-green);
+}
+
+.contact-container {
+  justify-content: center;
+}
+
+.contact-details-list {
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29.76px;
+  letter-spacing: 0.64px;
+}
+
+.contact-details-item {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 85px;
+  width: 368px;
+  height: 538px;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px 0px var(--bg-shadow);
+}
+
+.contact-place {
+  color: var(--text-black);
+  font-weight: 500;
+  line-height: 29.76px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.contact-text {
+  height: 50px;
+  flex-shrink: 0;
+
+  font-weight: 500;
+  line-height: 29.28px;
+  letter-spacing: 0.64px;
+}
+.one {
+  width: 288px;
+  color: var(--text-rose-gray);
+}
+.two {
+  width: 243px;
+  color: var(--text-rose-gray);
+}
+.three {
+  width: 276px;
+  color: var(--text-rose-gray);
+}
+
+.contact-icon-Vector-line {
+  width: 288px;
+  height: 2px;
+  flex-shrink: 0;
+  border: 1px;
+  stroke-width: 1px;
+  stroke: var(--border-gray);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.icon-Vector-line {
+  height: 8px;
+  display: flex;
+  /*margin-top: 32px;*/
+}
+
+.contact-details-two {
+  color: var(--title-black);
+  /*margin-top: 64px;*/
+}
+
+.contact-time {
+  color: var(--title-rose);
+}
+
+.contact-number {
+  color: var(--text-rose-gray);
+
+  &:hover,
+  focus {
+    color: var(--text-red);
+  }
+}
+.contact-email {
+  color: var(--text-rose-gray);
+
+  &:hover,
+  focus {
+    color: var(--text-red);
+  }
+}
+
+.contact-button {
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-arrow-location {
+  display: flex;
+}
+
+.location-button {
+  width: 198px;
+  height: 44px;
+
+  border: 22px;
+  border-radius: 22px;
+  background: var(--button-bg-red);
+  color: var(--title-white);
+
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-red-hover);
+  }
+}
+
+.franchise-button {
+  width: 168px;
+  height: 44px;
+
+  border: 22px;
+  border-radius: 22px;
+  background: var(--button-bg-white);
+  color: var(--title-red);
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 36.4px;
+
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-white-hover);
+  }
+}
+
+.location-button,
+.franchise-button {
+  margin-top: 60px;
+}
+
+// Clifton James Nomus
