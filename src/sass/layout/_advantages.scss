@@ -1,11 +1,71 @@
 .section-advantages {
-  background-color: var(--bg-white);
+  background-color: var(--bg-rose-light);
+
+  padding-top: 40px;
 }
 .advantages-container {
   display: flex;
-  background-color: var(--bg-white);
+  background-color: var(--bg-rose-light);
+  height: 432px;
+  /*align-items: center;*/
 }
 .sample {
   width: auto;
   height: 1500px;
 }
+
+.advantages-ul {
+  display: flex;
+  justify-content: flex-start;
+  //margin-top: 40px;
+}
+
+.advantages-mid-text {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.mid-text {
+  display: flex;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+.advantages-low-text {
+  color: var(--text-black);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.76;
+  letter-spacing: 0.32px;
+}
+
+.low-text1 {
+  width: 288px;
+  height: 79px;
+  flex-shrink: 0;
+}
+
+.low-text2 {
+  width: 317px;
+  height: 58px;
+  flex-shrink: 0;
+}
+
+.low-text3 {
+  width: 290px;
+  height: 82px;
+  flex-shrink: 0;
+}
+
+.li-2 {
+  margin-left: 115px;
+  margin-right: 80px;
+}
+
+.li-1 {
+  margin-left: 10px;
+}
+
+// Cliff
