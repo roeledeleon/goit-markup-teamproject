@@ -118,6 +118,9 @@ h4 {
   justify-content: center;
 }
 
+.contact-arrow-location {
+  display: flex;
+}
 .location-button {
   width: 198px;
   height: 44px;
@@ -125,6 +128,9 @@ h4 {
   border: 22px;
   border-radius: 22px;
   background: #d41342;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .location-button-text {
@@ -141,11 +147,12 @@ display: flex;
   margin-left: 34px;
 }
 
-.icon-contact-arrow-button {
+/*.icon-contact-arrow-button {
     flex-shrink: 0;
     stroke-width: 2px;
-      stroke: #FFF;
-}
+    stroke: #FFF;
+    color: white;
+}*/
 
 .franchise-button {
   width: 168px;
@@ -159,6 +166,11 @@ display: flex;
   font-weight: 700;
   line-height: normal;
   margin-left: 36.4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .location-button,
