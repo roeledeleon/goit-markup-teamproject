@@ -1,11 +1,309 @@
 .section-products {
   background-color: var(--bg-white);
+  //margin-top: 61px;
 }
 .products-container {
-  display: flex;
   background-color: var(--bg-white);
 }
-.sample {
-  width: auto;
-  height: 1500px;
+/*
+.subtitle {
+  color: var(--text-rose);
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
+.subtitle-special {
+  color: var(--text-red);
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.48px;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+*/
+.product-details {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-title {
+  padding-top: 165px;
+  color: var(--text-white);
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.product-text {
+  color: var(--text-white);
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 176%; /* 28.16px */
+  letter-spacing: 0.64px;
+  margin: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  height: 134px;
+}
+
+.icon_logo {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  fill: var(--white);
+}
+
+.product-card {
+  text-align: center;
+  flex-basis: 368px;
+  height: 796px;
+}
+
+.product-card-1 {
+  border-radius: 24px;
+  background: var(--accent-rose);
+}
+
+.product-card-2 {
+  border-radius: 24px;
+  background: var(--accent-yellow);
+}
+
+.product-card-3 {
+  border-radius: 24px;
+  background: var(--accent-green);
+}
+
+.product-details {
+  position: relative;
+}
+.product-description {
+  position: relative;
+  top: -133px; // 165-32
+  z-index: 80; //1;
+}
+
+.button-circle-small {
+  margin: auto;
+}
+
+.button-div {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 60px;
+}
+
+.product-one::before {
+  display: block;
+  content: '';
+  background-image: url(/src/images/home-pic1.png);
+  width: 368px;
+  height: 394px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: relative;
+  z-index: 90;
+}
+
+.product-two::before {
+  display: block;
+  content: '';
+  background-image: url(/src/images/home-pic2.png);
+  width: 368px;
+  height: 394px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: relative;
+  z-index: 90;
+}
+
+.product-three::before {
+  display: block;
+  content: '';
+  background-image: url(/src/images/home-pic3.png);
+  width: 368px;
+  height: 394px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: relative;
+  z-index: 90;
+}
+
+// MEDIA QUERY
+
+@media (max-width: 768px) {
+  .product-details {
+    width: 280px;
+  }
+
+  .product-card {
+    height: 629px;
+  }
+
+  .product-description {
+    position: relative;
+    top: -140px; // 160-20
+    z-index: 80; //1;
+  }
+
+  .product-one::before {
+    display: block;
+    content: '';
+    background-image: url(/src/images/home-pic1.png);
+    /* background-size: 100px, 100px; */
+    width: 280px;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 90;
+  }
+
+  .product-two::before {
+    display: block;
+    content: '';
+    background-image: url(/src/images/home-pic2.png);
+
+    width: 280px;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 90;
+  }
+
+  .product-three::before {
+    display: block;
+    content: '';
+    background-image: url(/src/images/home-pic3.png);
+
+    width: 280px;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 90;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .subtitle-special {
+    font-size: 34px;
+  }
+
+  .product-title {
+    padding-top: 160px;
+    font-size: 20px;
+  }
+
+  .product-text {
+    font-size: 14px;
+    height: 124px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .product-details {
+    width: 800px;
+    gap: 16px;
+  }
+
+  .product-card {
+    max-width: 224px;
+    height: 611px;
+  }
+
+  .product-one::before {
+    display: block;
+    content: '';
+    background-image: url(/src/images/home-pic1.png);
+
+    width: 224px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 90;
+  }
+
+  .product-two::before {
+    display: block;
+    content: '';
+    background-image: url(/src/images/home-pic2.png);
+
+    width: 224px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 90;
+  }
+
+  .product-three::before {
+    display: block;
+    content: '';
+    background-image: url(/src/images/home-pic3.png);
+
+    width: 224px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 90;
+  }
+
+  .subtitle {
+    font-size: 26px;
+  }
+
+  .subtitle-special {
+    font-size: 48px;
+  }
+
+  .product-title {
+    padding-top: 118px;
+    font-size: 20px;
+  }
+
+  .product-text {
+    font-size: 14px;
+    height: 150px;
+  }
+}
+
+// Clifton
