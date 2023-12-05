@@ -2,10 +2,117 @@
   background-color: var(--bg-rose-light);
 }
 .about-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-rose-light);
   display: flex;
+  flex-direction: column;
+}
+
+.section-table {
   background-color: var(--bg-rose-light);
 }
-.sample {
-  width: auto;
-  height: 1500px;
+
+.table-container {
+  background-image: url('/src/images/sectionbg1\ 1.png');
+  background-repeat: no-repeat;
+  background-position: 0% 40%, 100% 53%;
+}
+.section-wrapper {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  //background: url('/src/images/sectionbg1\ 1.png'),
+  //  lightgray 0px -0.163px / 100% 100.063% no-repeat;
+
+  //background-image: url('/src/images/sectionbg1\ 1.png');
+  //background-size: auto;
+  //background-repeat: no-repeat;
+}
+
+.col {
+  width: 50%;
+}
+
+.gap-32 {
+  padding-bottom: 32px;
+}
+
+.gap-40 {
+  padding-bottom: 40px;
+}
+
+.about-details {
+  margin: 16px;
+  text-align: left;
+  max-width: 400px;
+}
+/*
+.header-label {
+  color: var(--rose);
+  text-align: center;
+  font-family: Titan One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+
+.section-header {
+  color: var(--red);
+  text-align: center;
+  font-family: Titan One;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.48px;
+  text-transform: uppercase;
+}
+
+*/
+.dark-text {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.16px;
+  letter-spacing: 0.64px;
+}
+
+.light-text {
+  color: var(--rose-gray);
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.16px;
+  letter-spacing: 0.56px;
+}
+
+.btn_read-more {
+  border-radius: 22px;
+  background: var(--white);
+  color: var(--red);
+
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 44px;
+
+  display: flex;
+  padding: 0 37px;
+  width: 176px;
+}
+
+.icon_read-more {
+  margin-left: 10px;
+}
+/* aligns svg icons*/
+svg.icon_read-more {
+  transform: translateY(5px);
 }
