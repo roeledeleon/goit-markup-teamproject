@@ -4,8 +4,51 @@
 .gallery-container {
   display: flex;
   background-color: var(--bg-white);
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+
+  background-image: linear-gradient(
+    to top,
+    var(--bg-white) 58%,
+    var(--bg-rose-light) 42%
+  );
 }
-.sample {
-  width: auto;
-  height: 1500px;
+
+.gallery-col1 {
+  display: flex;
+  align-items: center;
+}
+
+.gallery-img {
+  transition: box-shadow 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px 4px rgba(212, 20, 67, 0.3);
+    cursor: pointer;
+  }
+}
+.gallery-col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-col4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-col5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -33px;
+}
+
+.gallery-col6 {
+  display: flex;
+  align-items: center;
 }
