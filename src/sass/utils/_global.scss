@@ -91,7 +91,7 @@ address {
 
 /* TITLE */
 .section-title {
-  font-family: --title-font;
+  font-family: var(--title-font);
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
@@ -100,13 +100,13 @@ address {
   text-align: center;
   text-transform: uppercase;
 
-  color: --title-red;
+  color: var(--title-red);
 
   font-size: 58px;
 }
 
 .section-label {
-  font-family: --title-font;
+  font-family: var(--title-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
@@ -117,7 +117,7 @@ address {
 
   margin-bottom: 15px;
 
-  color: --title-rose;
+  color: var(--title-rose);
 
   font-size: 30px;
 }
