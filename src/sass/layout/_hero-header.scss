@@ -96,15 +96,93 @@
   padding-bottom: 88px;
   background-color: var(--bg-hero);
 }
+/*
 .btn_hero {
   height: 40px;
-}
+}*/
 .hero-button-list {
   display: flex;
   margin-top: 20px;
 }
 .hero-button-item:nth-child(2) {
   margin-left: 12px;
+}
+
+.products-button {
+  width: 107px;
+  height: 40px;
+
+  border: 20px;
+  border-radius: 20px;
+  background: var(--button-bg-red);
+  color: var(--title-white);
+
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: center;
+
+  display: flex;
+  position: relative;
+  z-index: 50;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-red-hover);
+  }
+}
+.products-button-text {
+  color: var(--text-white);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.howitsmade-button {
+  width: 138px;
+  height: 40px;
+
+  border: 20px;
+  border-radius: 20px;
+  background: var(--button-bg-white);
+  /*
+  color: var(--title-red);
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 36.4px;
+*/
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: center;
+
+  display: flex;
+  position: relative;
+  z-index: 50;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-white-hover);
+  }
+}
+
+.howitsmade-button-text {
+  color: var(--text-red);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .hero-wrapper {
   position: relative;
