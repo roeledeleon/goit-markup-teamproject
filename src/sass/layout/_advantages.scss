@@ -5,7 +5,7 @@
   display: flex;
   background-color: var(--bg-white);
   height: 472px;
-  align-items: center;
+  /*align-items: center;*/
 }
 .sample {
   width: auto;
@@ -15,6 +15,7 @@
 .advantages-ul {
   display: flex;
   justify-content: flex-start;
+  margin-top: 40px;
 }
 
 .advantages-mid-text {
@@ -40,6 +41,9 @@
     text-transform: uppercase;
 }
 
+.advantages-84 {
+  display: flex;
+}
 .advantages-low-text {
 color: #000;
   font-family: DM Sans;
