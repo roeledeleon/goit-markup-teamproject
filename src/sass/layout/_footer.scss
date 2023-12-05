@@ -29,6 +29,32 @@
   display: flex;
   flex-direction: row;
 }
+
+.command-soc-icon1 {
+  display: block;
+}
+.command-soc-icon2 {
+  display: none;
+}
+.footer-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--rose);
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    .command-soc-icon1 {
+      display: none;
+    }
+    .command-soc-icon2 {
+      display: block;
+    }
+  }
+}
+
 .footer-vector {
   display: flex;
   margin-top: 60px;
