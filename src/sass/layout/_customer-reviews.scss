@@ -25,11 +25,18 @@
   margin-top: 32px;
 
   padding: 47px 73px 38px 73px;
+  /*
+  padding-top: 47px;
+  padding-right: 73px;
+
+  padding-bottom: 38px;
+  padding-left: 73px;
+*/
   margin-top: 16px;
 }
 .article-container {
-  padding-left: 140px;
-  padding-right: 140px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 article img {
