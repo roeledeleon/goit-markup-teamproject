@@ -165,14 +165,29 @@ h4 {
   color: var(--title-rose);
 }
 
-.contact-details-link {
+.contact-number {
   color: var(--text-rose-gray);
+
+  &:hover,
+  focus {
+    color: #d41443;
+  }
+}
+.contact-email {
+  color: var(--text-rose-gray);
+
+  &:hover,
+  focus {
+    color: #d41443;
+  }
 }
 
+/*
 .contact-details-link:hover,
 .contact-details-link:focus {
   color: #d41443;
 }
+*/
 
 .contact-button {
   gap: 12px;
