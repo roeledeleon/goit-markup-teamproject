@@ -8,14 +8,31 @@
 .contact-details {
   display: flex;
   flex-direction: column;
-  font-family: DM Sans;
+  font-family: var(--primary-font);
 }
 
 h4 {
-  color: white;
+  color: var(--text-white);
 }
-
-.contact-header-cafe {
+.contact-header {
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  font-weight: 500;
+  line-height: 29.76px;
+  letter-spacing: 0.64px;
+  border-radius: 6px;
+}
+.cafe {
+  width: 75.103px;
+  background: var(--accent-yellow);
+}
+.truck {
+  width: 138px;
+  background: var(--accent-green);
+}
+/*
+.contact-header {
   text-align: center;
   width: 75.103px;
   height: 28px;
@@ -27,24 +44,24 @@ h4 {
   background: #f0d1a5;
 }
 
-
 .contact-header-truck {
-    text-align: center;
-    width: 138px;
-    height: 28px;
-    flex-shrink: 0;
-    font-weight: 500;
-    line-height: 29.76px;
-    letter-spacing: 0.64px;
-    border-radius: 6px;
-    background: #c2e297;
+  text-align: center;
+  width: 138px;
+  height: 28px;
+  flex-shrink: 0;
+  font-weight: 500;
+  line-height: 29.76px;
+  letter-spacing: 0.64px;
+  border-radius: 6px;
+  background: #c2e297;
 }
+*/
 
 .contact-container {
   justify-content: center;
 }
 
-.contact-details-ul {
+.contact-details-list {
   display: flex;
   gap: 32px;
   font-size: 16px;
@@ -54,7 +71,7 @@ h4 {
   letter-spacing: 0.64px;
 }
 
-.contact-details-li {
+.contact-details-item {
   padding-top: 40px;
   padding-left: 40px;
   padding-bottom: 40px;
@@ -62,19 +79,40 @@ h4 {
   width: 368px;
   height: 538px;
   border-radius: 24px;
-  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+  box-shadow: 0px 8px 30px 0px var(--bg-shadow);
 }
 
 .contact-place {
-  color: #000;
+  color: var(--text-black);
   font-weight: 500;
   line-height: 29.76px;
   margin-top: 32px;
   margin-bottom: 8px;
 }
 
-.contact-text-1 {
+.contact-text {
+  height: 50px;
+  flex-shrink: 0;
+
+  font-weight: 500;
+  line-height: 29.28px;
+  letter-spacing: 0.64px;
+}
+.one {
   width: 288px;
+  color: var(--text-rose-gray);
+}
+.two {
+  width: 243px;
+  color: var(--text-rose-gray);
+}
+.three {
+  width: 276px;
+  color: var(--text-rose-gray);
+}
+/*
+.contact-text-1 {
+  width:288px;
   height: 50px;
   flex-shrink: 0;
   color: #907e82;
@@ -82,26 +120,25 @@ h4 {
   line-height: 29.28px;
   letter-spacing: 0.64px;
 }
-
 .contact-text-2 {
-    width: 243px;
-      height: 50px;
-      flex-shrink: 0;
-      color: #907e82;
-      font-weight: 500;
-      line-height: 29.28px;
-      letter-spacing: 0.64px;
+  width: 243px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #907e82;
+  font-weight: 500;
+  line-height: 29.28px;
+  letter-spacing: 0.64px;
 }
-
 .contact-text-3 {
-    width: 276px;
-      height: 50px;
-      flex-shrink: 0;
-      color: #907e82;
-      font-weight: 500;
-      line-height: 29.28px;
-      letter-spacing: 0.64px;
+  width: 276px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #907e82;
+  font-weight: 500;
+  line-height: 29.28px;
+  letter-spacing: 0.64px;
 }
+*/
 
 .contact-icon-Vector-line {
   width: 288px;
@@ -109,7 +146,7 @@ h4 {
   flex-shrink: 0;
   border: 1px;
   stroke-width: 1px;
-  stroke: #E1E1E1;
+  stroke: var(--border-gray);
   margin-top: 32px;
   margin-bottom: 32px;
 }
@@ -120,16 +157,21 @@ h4 {
   /*margin-top: 32px;*/
 }
 .contact-details-two {
-  color: #000;
- /*margin-top: 64px;*/
+  color: var(--title-black);
+  /*margin-top: 64px;*/
 }
 
 .contact-time {
-  color: #ffa5ba;
+  color: var(--title-rose);
 }
 
 .contact-details-link {
-  color: #907e82;
+  color: var(--text-rose-gray);
+}
+
+.contact-details-link:hover,
+.contact-details-link:focus {
+  color: #d41443;
 }
 
 .contact-button {
@@ -144,63 +186,89 @@ h4 {
 .location-button {
   width: 198px;
   height: 44px;
-  flex-shrink: 0;
+
   border: 22px;
   border-radius: 22px;
-  background: #d41342;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
+  background: var(--button-bg-red);
+  color: var(--title-white);
 
-.location-button-text {
-display: flex;
-  width: 109px;
-  height: 44px;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
   flex-shrink: 0;
-  color: #FFF;
+  align-items: center;
   text-align: center;
-  font-weight: 700;
-  line-height: normal;
-  margin-left: 34px;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-red-hover);
+  }
 }
-
-/*.icon-contact-arrow-button {
-    flex-shrink: 0;
-    stroke-width: 2px;
-    stroke: #FFF;
-    color: white;
-}*/
-
+/*
+.icon-location-arrow-button {
+  flex-shrink: 0;
+  stroke-width: 2px;
+  stroke: #fff;
+}
+*/
 .franchise-button {
   width: 168px;
   height: 44px;
-  flex-shrink: 0;
+
   border: 22px;
   border-radius: 22px;
-  background: #FFF;
-  color: #D41443;
-  text-align: center;
+  background: var(--button-bg-white);
+  color: var(--title-red);
   font-weight: 700;
   line-height: normal;
   margin-left: 36.4px;
 
   display: flex;
   justify-content: center;
+  flex-shrink: 0;
   align-items: center;
-  gap: 8px;
-}
+  text-align: center;
 
+  gap: 8px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-white-hover);
+  }
+}
+/*
+.icon-franchise-arrow-button {
+  flex-shrink: 0;
+  stroke-width: 2px;
+  fill: #fff;
+}
+*/
 .location-button,
 .franchise-button {
   margin-top: 60px;
 }
 
-.contact-details-link:hover, :focus{
-  color: #D41443;
+/*
+.location-button-text {
+  display: flex;
+  width: 109px;
+  height: 44px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--text-white);
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 34px;
 }
+*/
+
 /*
 @media (min-width:1200px) {
 
@@ -236,8 +304,8 @@ display: flex;
 
 */
 
-@media (max-width:767px){
-  .contact-details-li {
+@media (max-width: 767px) {
+  .contact-details-item {
     width: 224px;
     height: 528px;
     flex-wrap: wrap;
@@ -282,8 +350,8 @@ display: flex;
   }
 }
 
-@media (max-width:319px) {
-  .contact-details-ul {
+@media (max-width: 319px) {
+  .contact-details-list {
     display: block;
     justify-content: center;
   }
@@ -307,8 +375,4 @@ display: flex;
     margin-top: 10px;
     margin-left: 0;
   }
-
 }
-
-
-
