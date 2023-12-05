@@ -181,4 +181,41 @@ display: flex;
 .contact-details-link:hover, :focus{
   color: #D41443;
 }
+/*
+@media (min-width:1200px) {
+
+  .section-contact {
+    width: 1200px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media (max-width:1199px) {
+
+    .section-contact {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+}
+
+@media (min-width:769px) {
+  .section-contact {
+    width: 769px;
+    justify-content: center;
+  }
+}
+
+@media (max-width:768px) {}
+
+@media (min-width:320px) {
+  .section-contact {
+    width: 320px;
+  }
+}
+
+@media (max-width:319px) {}
+
+*/
+
+
+
 
