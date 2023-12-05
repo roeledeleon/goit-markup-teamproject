@@ -110,6 +110,7 @@ h4 {
   width: 276px;
   color: var(--text-rose-gray);
 }
+
 /*
 .contact-text-1 {
   width:288px;
@@ -150,12 +151,12 @@ h4 {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-
 .icon-Vector-line {
   height: 8px;
   display: flex;
   /*margin-top: 32px;*/
 }
+
 .contact-details-two {
   color: var(--title-black);
   /*margin-top: 64px;*/
@@ -170,7 +171,7 @@ h4 {
 
   &:hover,
   focus {
-    color: #d41443;
+    color: var(--text-red);
   }
 }
 .contact-email {
@@ -178,7 +179,7 @@ h4 {
 
   &:hover,
   focus {
-    color: #d41443;
+    color: var(--text-red);
   }
 }
 
