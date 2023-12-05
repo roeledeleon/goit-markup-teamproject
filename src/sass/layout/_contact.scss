@@ -73,7 +73,7 @@ h4 {
   margin-bottom: 8px;
 }
 
-.contact-text {
+.contact-text-1 {
   width: 288px;
   height: 50px;
   flex-shrink: 0;
@@ -81,6 +81,26 @@ h4 {
   font-weight: 500;
   line-height: 29.28px;
   letter-spacing: 0.64px;
+}
+
+.contact-text-2 {
+    width: 243px;
+      height: 50px;
+      flex-shrink: 0;
+      color: #907e82;
+      font-weight: 500;
+      line-height: 29.28px;
+      letter-spacing: 0.64px;
+}
+
+.contact-text-3 {
+    width: 276px;
+      height: 50px;
+      flex-shrink: 0;
+      color: #907e82;
+      font-weight: 500;
+      line-height: 29.28px;
+      letter-spacing: 0.64px;
 }
 
 .contact-icon-Vector-line {
@@ -215,7 +235,5 @@ display: flex;
 @media (max-width:319px) {}
 
 */
-
-
 
 
