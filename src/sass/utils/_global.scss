@@ -2,11 +2,11 @@
 body {
   box-sizing: border-box;
 
-  font-family: --primary-font;
+  font-family: var(--primary-font);
   font-size: 16px;
-  color: --text-black;
+  color: var(--text-black);
 
-  background-color: --bg-white;
+  background-color: var(--bg-white);
 
   &.lock {
     overflow: hidden;
@@ -81,45 +81,80 @@ address {
   width: 100%;
   margin: 0 auto;
   padding: 0px 16px;
-  width: 1200px;
+
+  @media screen and (min-width: 480) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768) {
+    width: 768px;
+    padding: 0px 16px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 1280px;
+  }
 }
 
 /* SECTION */
 .section-container {
   padding: 100px 0px;
+
+  @media screen and (min-width: 768) {
+    padding: 80px 0px;
+  }
+  @media screen and (min-width: 1280) {
+    padding: 100px 0px;
+  }
 }
 
 /* TITLE */
 .section-title {
+  color: var(--title-red);
   font-family: var(--title-font);
+  font-size: 48px;
   font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-  letter-spacing: 0.06em;
-
-  text-align: center;
+  line-height: 96.5%;
   text-transform: uppercase;
 
-  color: var(--title-red);
-
-  font-size: 58px;
+  @media screen and (min-width: 768) {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 90.5%;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 1280) {
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 90.5%;
+    letter-spacing: 2.32px;
+  }
 }
 
 .section-label {
-  font-family: var(--title-font);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
+  color: var(--text-white);
 
-  text-align: center;
+  font-family: var(--title-font);
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 1.04px;
   text-transform: uppercase;
 
   margin-bottom: 15px;
 
   color: var(--title-rose);
 
-  font-size: 30px;
+  @media screen and (min-width: 768) {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 1280) {
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
+  }
 }
 
 /* IS-HIDDEN */
