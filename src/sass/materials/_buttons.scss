@@ -96,6 +96,40 @@
   }
 }
 
+.btn_buy-now {
+  @extend %button;
+  margin-top: 37px;
+
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  width: 159px;
+  height: 44px;
+
+  background-color: var(--button-bg-white);
+  color: var(--text-red);
+
+  &:hover {
+    background-color: var(--button-bg-white-hover);
+  }
+
+  @media screen and (max-width: 767) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1279) {
+    margin-top: 37px;
+    margin-left: 32px;
+  }
+}
+.icon_buy-now {
+  margin-left: 8px;
+}
+
 .btn-hero {
   border: 20px;
   border-radius: 20px;
