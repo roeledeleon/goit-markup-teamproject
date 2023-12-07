@@ -1,52 +1,62 @@
 <header class="header" id="header">
   <section class="section-hero-header">
     <div class="container hero-header-container">
-      <div class="container-header">
-        <nav class="nav-header">
-          <div class="nav-element">
-            <a href="./index.html" class="header-logo">
-              <svg class="icon_logo" width="199" height="50">
-                <use
-                  href="/src/images/symbol-defs.svg#icon-logo_iconice-cream"
-                ></use>
-              </svg>
-            </a>
+      <div class="container container-header">
+        <div class="header-wrapper">
+          <div class="nav-container">
+            <nav class="nav-header">
+              <div class="nav-element">
+                <a href="./index.html" class="header-logo">
+                  <svg class="icon_logo" width="199" height="50">
+                    <use
+                      href="/src/images/symbol-defs.svg#icon-logo_iconice-cream"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="nav-element">
+                <ul class="navbar-list list" id="navbar">
+                  <li class="navbar-item">
+                    <a href="#home" class="navbar-link current">Home</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#about" class="navbar-link link">About us</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#how" class="navbar-link link">How it's made?</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#products" class="navbar-link link"
+                      >Our products</a
+                    >
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#contact" class="navbar-link link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-          <div class="nav-element">
-            <ul class="navbar-list list" id="navbar">
-              <li class="navbar-item">
-                <a href="#home" class="navbar-link current">Home</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#about" class="navbar-link link">About us</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#how" class="navbar-link link">How it's made?</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#products" class="navbar-link link">Our products</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#contact" class="navbar-link link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <svg class="icon_burger" width="20" height="12">
+          <div class="btn_burger">
+            <svg class="icon_burger">
               <use href="/src/images/symbol-defs.svg#icon-burger"></use>
             </svg>
           </div>
-          <div class="button btn_buy-now nav-element">
-            <div>
-              <a>Buy now </a>
-            </div>
-            <div>
-              <svg class="icon_buy-now" width="10" height="20">
-                <use href="/src/images/symbol-defs.svg#icon-arrow-button"></use>
-              </svg>
+          <div class="btn-container">
+            <div class="button btn_buy-now nav-element">
+              <div>
+                <a>Buy now </a>
+              </div>
+              <div>
+                <svg class="icon_buy-now" width="10" height="20">
+                  <use
+                    href="/src/images/symbol-defs.svg#icon-arrow-button"
+                  ></use>
+                </svg>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
       <div class="container container-hero">
         <div class="hero-wrapper" id="home">
@@ -58,31 +68,47 @@
 
           <div class="hero-button-list">
             <div class="hero-button-item">
-              <button type="button" class="products-button">
-                <a href="#products" class="products-button-text">Product</a>
+              <button type="button" class="btn-hero btn_products">
+                <a href="#products" class="btn-hero-txt btn_products-text"
+                  >Product</a
+                >
               </button>
             </div>
             <div class="hero-button-item">
-              <button type="button" class="howitsmade-button">
-                <a href="#how" class="howitsmade-button-text">How it's made?</a>
+              <button type="button" class="btn-hero btn_howitsmade">
+                <a href="#how" class="btn-hero-txt btn_howitsmade-text"
+                  >How it's made?</a
+                >
               </button>
             </div>
           </div>
-
-          <div class="hero-wrapper-text">
-            <h2 class="hero-text">
-              Indulge in a scoop of ice <br />
-              cream made with passion and <br />
-              treat your taste buds to an <br />
-              unforgettable experience!
-            </h2>
-            <button type="button" class="button-circle-small">
-              <svg class="icon_arrow-right" width="10" height="10">
-                <use
-                  href="/src/images/symbol-defs.svg#icon-arrow-button-circle"
-                ></use>
-              </svg>
-            </button>
+          <div class="hero-wrapper-info">
+            <div class="hero-info-milk">
+              <img
+                class="hero-image_2nd-set img_milk"
+                src="/src/images/slider-pic5 1.png"
+                alt="milk"
+              />
+              <div class="hero-info-txt">
+                <div class="hero-wrapper-text">
+                  <h2 class="hero-text">
+                    Indulge in a scoop of ice <br />
+                    cream made with passion and <br />
+                    treat your taste buds to an <br />
+                    unforgettable experience!
+                  </h2>
+                  <div>
+                    <button type="button" class="button-circle-small">
+                      <svg class="icon_arrow-right" width="10" height="10">
+                        <use
+                          href="/src/images/symbol-defs.svg#icon-arrow-button-circle"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <ul class="hero-number-list">
             <li class="hero-number-item"><a class="hero-number"> 16</a></li>
@@ -101,17 +127,12 @@
               src="/src/images/slider-pic7 1.png"
               alt="ice cream"
             />
+          </div>
+          <div class="hero-image">
             <img
               class="hero-image_1st-set img_lady-lick"
               src="/src/images/slider-pic4 1.png"
               alt="lady licking ice cream"
-            />
-          </div>
-          <div class="hero-image">
-            <img
-              class="hero-image_2nd-set img_milk"
-              src="/src/images/slider-pic5 1.png"
-              alt="milk"
             />
           </div>
         </div>

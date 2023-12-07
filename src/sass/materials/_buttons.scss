@@ -11,11 +11,22 @@
   justify-content: center;
   align-items: center;
 
+  flex-shrink: 0;
+
   padding: 12px 35px;
   border-radius: 22px;
 
   text-align: center;
   cursor: pointer;
+
+  width: 160px;
+  height: 44px;
+
+  @media screen and (min-width: 1280) {
+    display: contents;
+    width: 159px;
+    height: 44px;
+  }
 }
 
 /* Hero Buttons */
@@ -74,6 +85,104 @@
 }
 .button-circle-small {
   @extend %button-circle;
-  width: 26px;
-  height: 26px;
+
+  @media screen and (min-width: 768) {
+    width: 18px;
+    height: 18px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.btn-hero {
+  border: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: center;
+}
+.btn-hero-txt {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn_products {
+  background: var(--button-bg-red);
+
+  display: flex;
+  position: relative;
+  z-index: 50;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-red-hover);
+  }
+
+  @media screen and (max-width: 767) {
+    width: 61.2px;
+    height: 24px;
+  }
+  @media screen and (min-width: 768) {
+    width: 61.2px;
+    height: 24px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 107px;
+    height: 40px;
+  }
+}
+
+.btn_products-text {
+  display: none;
+  color: var(--text-white);
+
+  display: flex;
+  font-size: 8px;
+
+  @media screen and (min-width: 1280) {
+    display: flex;
+    font-size: 14px;
+  }
+}
+
+.btn_howitsmade {
+  background: var(--button-bg-white);
+
+  display: flex;
+  position: relative;
+  z-index: 50;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-white-hover);
+  }
+
+  width: 82.28px;
+  height: 24px;
+
+  @media screen and (min-width: 1280) {
+    width: 138px;
+    height: 40px;
+  }
+}
+.btn_howitsmade-text {
+  display: none;
+  color: var(--text-red);
+
+  display: flex;
+  font-size: 8px;
+
+  @media screen and (min-width: 1280) {
+    display: flex;
+    font-size: 14px;
+  }
 }

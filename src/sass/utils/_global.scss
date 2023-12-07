@@ -82,15 +82,19 @@ address {
   margin: 0 auto;
   padding: 0px 16px;
 
+  @media screen and (max-width: 479) {
+    width: 320px;
+  }
+
   @media screen and (min-width: 480) {
-    width: 480px;
+    width: 320px;
   }
   @media screen and (min-width: 768) {
-    width: 768px;
+    width: 736px;
     padding: 0px 16px;
   }
   @media screen and (min-width: 1280) {
-    width: 1280px;
+    width: 1200px;
   }
 }
 
