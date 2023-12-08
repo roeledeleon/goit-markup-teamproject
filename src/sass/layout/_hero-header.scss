@@ -148,8 +148,7 @@
   top: 0;
   z-index: 999;
   padding: 20px 0;
-  width: 254px;
-  height: 1020px;
+
   background-color: var(--bg-hero-modal);
   overflow-y: scroll;
   -webkit-transform: translateX(100%);
@@ -159,6 +158,14 @@
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function),
     -webkit-transform 250ms var(--timing-function);
+
+  width: 250px;
+  height: 502px;
+
+  @media screen and (min-width: 768) {
+    width: 254px;
+    height: 1020px;
+  }
 }
 .mm_container {
   display: -webkit-box;
@@ -192,7 +199,6 @@ div.mm_button:hover svg.mm_button-icon-default {
 div.mm_button:hover svg.mm_button-icon-hover {
   display: block;
 }
-
 // End of Styles MOBILE MENU
 
 /* HERO Styles */

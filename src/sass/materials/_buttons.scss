@@ -5,7 +5,7 @@
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 16px;
-  line-height: 20.83px;
+  //line-height: 20px;
 
   display: flex;
   justify-content: center;
@@ -130,6 +130,37 @@
   margin-left: 8px;
 }
 
+.btn_mm-buy-now {
+  @extend %button;
+
+  @media screen and (max-width: 767) {
+    margin-top: 26px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768) {
+    margin-top: 24px;
+    margin-bottom: 33px;
+  }
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  width: 209px;
+  height: 44px;
+
+  background-color: var(--button-bg-white);
+  color: var(--text-red);
+
+  &:hover {
+    background-color: var(--button-bg-white-hover);
+  }
+}
+.icon_mm-buy-now {
+  margin-left: 14px;
+}
 .btn-hero {
   border: 20px;
   border-radius: 20px;
