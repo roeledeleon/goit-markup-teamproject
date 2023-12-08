@@ -143,6 +143,8 @@
   }
   z-index: 10;
 
+  margin-left: 20px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -160,6 +162,11 @@
 }
 .icon_mm-buy-now {
   margin-left: 14px;
+}
+.mm_button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
 .btn-hero {
   border: 20px;
