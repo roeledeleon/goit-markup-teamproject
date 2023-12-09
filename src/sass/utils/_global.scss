@@ -110,29 +110,25 @@ address {
   }
 }
 
-/* TITLE */
+/* SECTION TITLE */
 .section-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--text-red);
+  text-align: center;
+  font-family: var(--title-font);
+
+  @media screen and (max-width: 768) {
+    font-size: 34px;
+    letter-spacing: 1.36px;
+  }
   @media screen and (min-width: 768) {
-    color: var(--text-red);
-    text-align: center;
-    font-family: var(--title-font);
     font-size: 48px;
-
-    font-weight: 400;
-
     letter-spacing: 1.92px;
-    text-transform: uppercase;
   }
   @media screen and (min-width: 1280) {
-    color: var(--text-red);
-    text-align: center;
-    font-family: var(--title-font);
     font-size: 58px;
-
-    font-weight: 400;
-
     letter-spacing: 3.48px;
-    text-transform: uppercase;
   }
 }
 
@@ -147,23 +143,11 @@ address {
   color: var(--title-rose);
 
   @media screen and (min-width: 768) {
-    color: var(--text-rose);
-    text-align: center;
-    font-family: var(--title-font);
     font-size: 26px;
-    font-weight: 400;
-    text-transform: uppercase;
   }
   @media screen and (min-width: 1280) {
-    color: var(--text-rose);
-    text-align: center;
-    font-family: var(--title-font);
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.2px;
-    text-transform: uppercase;
   }
 }
 
