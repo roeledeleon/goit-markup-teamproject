@@ -4,23 +4,60 @@
 .footer-container {
   background-color: var(--bg-rose-light);
 }
-.footer-text {
-  width: 474px;
-}
-.footer-label {
-  gap: 24px;
+.footer-wrapper {
+  display: flex;
+
+  @media screen and (max-width: 767) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768) {
+    justify-content: space-between;
+  }
 }
 .footer-items {
   display: flex;
-  justify-content: space-between;
+}
+.footer-label,
+.footer-title {
+  text-align: left;
+
+  width: 250px;
+  @media screen and (min-width: 768) {
+    width: 380px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 500px;
+  }
+}
+.socmed-items {
+  //text-align: right;
 }
 .socmed-items {
   display: flex;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-end;
+
+  padding-top: 40px;
+  @media screen and (max-width: 767) {
+    .socmed-icons {
+      padding-bottom: 40px;
+    }
+  }
+  @media screen and (min-width: 768) {
+    justify-content: flex-end;
+    padding-bottom: 19px;
+    .socmed-icons {
+      padding-bottom: 40px;
+    }
+  }
+  @media screen and (min-width: 1280) {
+    justify-content: space-between;
+    padding-bottom: 0px;
+  }
 }
+
 .socmed-icons_1,
 .socmed-icons_2 {
   margin-right: 30px;
@@ -28,6 +65,21 @@
 .socmed-icons {
   display: flex;
   flex-direction: row;
+}
+
+.command-soc-icon1,
+.command-soc-icon2 {
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: 768) {
+    width: 34px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .command-soc-icon1 {
@@ -55,9 +107,38 @@
   }
 }
 
+.footer-contact {
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+.footer-contact-txt,
+.footer-contact-no {
+  font-size: 12px;
+  line-height: 22.32px;
+
+  @media screen and (min-width: 768) {
+    font-size: 14px;
+    line-height: 26.04px;
+  }
+  @media screen and (min-width: 1280) {
+    font-size: 16px;
+    line-height: 29.76px;
+    letter-spacing: 0.32px;
+  }
+}
+.footer-contact-txt {
+  color: var(--black);
+}
+.footer-contact-no {
+  color: var(--red);
+}
+
 .footer-vector {
   display: flex;
-  margin-top: 60px;
+  margin-top: 40px;
+  @media screen and (min-width: 1280) {
+    margin-top: 60px;
+  }
 }
 .footer-vector svg {
   color: var(--rose-gray);
@@ -67,37 +148,42 @@
   width: 100%;
   height: 10px;
 }
+.footer-trademark {
+  display: flex;
+  justify-content: center;
+}
 .copyright {
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  //height: 26px;
+
+  padding-top: 16px;
   padding-bottom: 4px;
+
+  width: 150px;
+
+  @media screen and (min-width: 767) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    width: 290px;
+  }
+  @media screen and (min-width: 1280) {
+    padding-top: 7px;
+    padding-bottom: 4px;
+
+    width: 290px;
+  }
 }
 .copyright-text {
   color: var(--rose-gray);
   font-family: var(--primary-font);
-  font-size: 14px;
   font-weight: 700;
   line-height: 1.5em;
   letter-spacing: 0.28px;
 
-  height: 26px;
-}
-.footer-contact-text {
-  color: var(--black);
-  font-family: var(--primary-font);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.86em;
-  letter-spacing: 0.32;
-}
-.footer-contact-no {
-  color: var(--red);
-  font-family: var(--primary-font);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.86em;
-  letter-spacing: 0.32px;
+  font-size: 14px;
 }
 
 // Mark Joseph Asejo
