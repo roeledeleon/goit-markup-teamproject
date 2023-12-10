@@ -1,21 +1,48 @@
 .section-contact {
-  //background-color: var(--bg-rose-light);
-
   background-image: linear-gradient(
     to top,
-    var(--bg-rose-light) 85%,
-    var(--bg-white) 15%
+    var(--bg-rose-light) 79%,
+    var(--bg-white) 21%
   );
+
+  @media screen and (min-width: 768) {
+    background-image: linear-gradient(
+      to top,
+      var(--bg-rose-light) 55%,
+      var(--bg-white) 45%
+    );
+  }
+
+  @media screen and (min-width: 1280) {
+    background-image: linear-gradient(
+      to top,
+      var(--bg-rose-light) 85%,
+      var(--bg-white) 15%
+    );
+  }
 }
 .contact-container {
   display: flex;
-  //background-color: var(--bg-rose-light);
 
   background-image: linear-gradient(
     to top,
-    var(--bg-rose-light) 85%,
-    var(--bg-white) 15%
+    var(--bg-rose-light) 79%,
+    var(--bg-white) 21%
   );
+  @media screen and (min-width: 768) {
+    background-image: linear-gradient(
+      to top,
+      var(--bg-rose-light) 55%,
+      var(--bg-white) 45%
+    );
+  }
+  @media screen and (min-width: 1280) {
+    background-image: linear-gradient(
+      to top,
+      var(--bg-rose-light) 85%,
+      var(--bg-white) 15%
+    );
+  }
 }
 
 .contact-details {
