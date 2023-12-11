@@ -1,5 +1,17 @@
 .section_customer-reviews {
   background-color: var(--bg-white);
+
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768) {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1280) {
+    margin-top: 90px;
+
+    margin-bottom: 120px;
+  }
 }
 .customer-reviews_container {
   display: flex;
@@ -21,22 +33,36 @@
 
 .bg-container {
   width: 100%;
-  background-color: var(--paginator-gr-white);
+
   margin-top: 32px;
 
-  padding: 47px 73px 38px 73px;
-  /*
-  padding-top: 47px;
-  padding-right: 73px;
+  @media screen and (max-width: 767) {
+    background-color: var(--paginator-gr-white);
+    padding: 47px 50px 47px 50px;
+  }
+  @media screen and (min-width: 768) {
+    margin-top: 57px;
+  }
+  @media screen and (min-width: 1280) {
+    margin-top: 16px;
 
-  padding-bottom: 38px;
-  padding-left: 73px;
-*/
-  margin-top: 16px;
+    background-color: var(--paginator-gr-white);
+    margin-top: 32px;
+
+    padding: 47px 73px 38px 73px;
+  }
 }
 .article-container {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 4px;
+  margin-right: 4px;
+  @media screen and (min-width: 768) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 1280) {
+    margin-left: 116px;
+    margin-right: 116px;
+  }
 }
 
 article img {
@@ -45,11 +71,10 @@ article img {
 }
 
 .article-text {
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
   text-align: center;
 
   background-image: repeating-linear-gradient(
@@ -59,14 +84,24 @@ article img {
     var(--paginator-gr-gray) 31px,
     var(--paginator-gr-gray) 31px
   );
+  padding: 0 8px 0px 15px;
 
-  padding: 0px 8px 9px 15px;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
+  font-family: var(--primary-font);
+  font-weight: 500;
+
+  font-size: 12px;
+  line-height: 2.6;
+  letter-spacing: 0.48px;
+  @media screen and (min-width: 768) {
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.56px;
+  }
+  @media screen and (min-width: 1280) {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.64px;
+  }
 }
 
 .article-text::before {
@@ -86,11 +121,11 @@ article img {
   top: -15px;
 }
 .article-text-second {
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 4%;
+  padding: 0px 8px 9px 15px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
   text-align: center;
 
   background-image: repeating-linear-gradient(
@@ -100,26 +135,42 @@ article img {
     var(--paginator-gr-gray) 31px,
     var(--paginator-gr-gray) 31px
   );
-
-  padding: 0px 8px 9px 15px;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
-
   padding: 0px 35px 8px 36px;
-}
-.article-name {
+
   font-family: var(--primary-font);
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.86;
+
+  font-size: 12px;
+  line-height: 2.6;
+  letter-spacing: 0.48px;
+  @media screen and (min-width: 768) {
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.56px;
+  }
+  @media screen and (min-width: 1280) {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.64px;
+  }
+}
+.article-name {
+  position: relative;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
   text-align: center;
 
-  position: relative;
-  margin-top: 32px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 1.86;
+
+  font-size: 14px;
+  @media screen and (min-width: 768) {
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
 }
 .article-name::before {
   display: block;
