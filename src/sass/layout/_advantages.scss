@@ -3,28 +3,75 @@
 
   padding-top: 40px;
 }
+
 .advantages-container {
   display: flex;
   background-color: var(--bg-rose-light);
-  height: 432px;
-  /*align-items: center;*/
-}
-.sample {
-  width: auto;
-  height: 1500px;
+  //height: 432px;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+
+  @media screen and (max-width: 479) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 480) {
+    width: 320px;
+  }
+  @media screen and (min-width: 768) {
+    width: 736px;
+    padding: 0px 32px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 1200px;
+    padding: 0px 16px;
+  }
 }
 
 .advantages-ul {
   display: flex;
   justify-content: flex-start;
-  //margin-top: 40px;
+
+  @media screen and (max-width: 767) {
+    flex-direction: column;
+    .li-2 {
+      margin-top: 32px;
+    }
+
+    .li-3 {
+      margin-top: 32px;
+    }
+    margin-bottom: 39px;
+  }
+  @media screen and (min-width: 768) {
+    margin-bottom: 18px;
+  }
+  @media screen and (min-width: 1280) {
+    margin-bottom: 90px;
+  }
 }
 
 .advantages-mid-text {
-  margin-top: 40px;
-  margin-bottom: 16px;
-}
+  display: flex;
 
+  margin-top: 16px;
+  margin-bottom: 4px;
+  @media screen and (min-width: 768) {
+    margin-top: 36px;
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1280) {
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+}
+.section-title {
+  display: flex;
+  justify-content: left;
+  font-size: 36px;
+}
 .mid-text {
   display: flex;
   text-align: right;
@@ -34,38 +81,56 @@
 .advantages-low-text {
   color: var(--text-black);
   font-family: var(--primary-font);
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 1.76;
-  letter-spacing: 0.32px;
+
+  font-size: 12px;
+  line-height: 28.4px;
+  letter-spacing: 0.24px;
+  @media screen and (min-width: 768) {
+    font-size: 14px;
+    line-height: 24.36px;
+    letter-spacing: 0.28px;
+  }
+  @media screen and (min-width: 1280) {
+    font-size: 16px;
+    line-height: 28.16px;
+    letter-spacing: 0.32px;
+  }
 }
 
 .low-text1 {
-  width: 288px;
-  height: 79px;
   flex-shrink: 0;
+  @media screen and (min-width: 768) {
+    width: 165px;
+    margin-right: 19px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 288px;
+    margin-right: 115px;
+  }
 }
 
 .low-text2 {
-  width: 317px;
-  height: 58px;
   flex-shrink: 0;
+  @media screen and (min-width: 768) {
+    width: 162px;
+    margin-right: 22px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 317px;
+    margin-right: 80px;
+  }
 }
 
 .low-text3 {
-  width: 290px;
-  height: 82px;
   flex-shrink: 0;
-}
 
-.li-2 {
-  margin-left: 115px;
-  margin-right: 80px;
-}
-
-.li-1 {
-  margin-left: 10px;
+  @media screen and (min-width: 768) {
+    width: 205px;
+  }
+  @media screen and (min-width: 1280) {
+    width: 290px;
+  }
 }
 
 // Cliff
