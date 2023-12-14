@@ -192,16 +192,23 @@ address {
   padding: 15px;
   border-radius: 4px;
 
+  .section-label {
+    width: 15px;
+    height: 15px;
+  }
+
   bottom: 10px;
   right: 15px;
-  .section-label {
+
+  .btn-icon_scroll-to-top-default {
+    display: block;
     width: 15px;
     height: 15px;
   }
   @media screen and (min-width: 768) {
     bottom: 10px;
     right: 10px;
-    .btn-icon_scroll-to-top-hover-white {
+    .btn-icon_scroll-to-top-default {
       width: 20px;
       height: 20px;
     }
@@ -209,24 +216,53 @@ address {
   @media screen and (min-width: 1280) {
     bottom: 20px;
     right: 30px;
+    .btn-icon_scroll-to-top-default {
+      display: block;
+      width: 25px;
+      height: 25px;
+    }
     .container {
       width: 25px;
       height: 25px;
     }
   }
-  .btn-icon_scroll-to-top-hover-white {
-    display: block;
-  }
-  .btn-icon_scroll-to-top-hover-red {
+  .btn-icon_scroll-to-top-hover {
     display: none;
   }
 }
 #myBtn:hover {
   background-color: var(--bg-rose);
-  .btn-icon_scroll-to-top-hover-white {
+  .btn-icon_scroll-to-top-default {
     display: none;
   }
-  .btn-icon_scroll-to-top-hover-red {
+  bottom: 10px;
+  right: 15px;
+
+  .btn-icon_scroll-to-top-hover {
     display: block;
+    width: 15px;
+    height: 15px;
+  }
+  @media screen and (min-width: 768) {
+    bottom: 10px;
+    right: 10px;
+    .btn-icon_scroll-to-top-hover {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @media screen and (min-width: 1280) {
+    bottom: 20px;
+    right: 30px;
+    .btn-icon_scroll-to-top-hover {
+      display: block;
+      width: 25px;
+      height: 25px;
+    }
+    .container {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
